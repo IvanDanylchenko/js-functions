@@ -41,6 +41,13 @@ console.groupEnd();
 
 console.group("Task 2");
 
+/**
+ * Function checks dividing the number whole or not
+ * @param {Number} n1
+ * @param {NUmber} n2
+ * @returns {boolean} true or false
+ */
+
 function checkMultiplicity(n1, n2) {
   if (Number.isInteger(n1 / n2)) {
     return true;
@@ -54,3 +61,26 @@ console.log(checkMultiplicity(15, 5));
 console.log(checkMultiplicity(15, 4));
 
 console.groupEnd();
+
+console.group("Task 3");
+
+/**
+ * Function checks whether a triangle is possible or not
+ * @param {Number} a
+ * @param {Number} b
+ * @param {boolean} c
+ * @returns true or false
+ */
+
+function triangle(a, b, c) {
+  if (a + b <= c || b + c <= a || a + c <= b) {
+    return false;
+  }
+  return true;
+}
+
+console.log(triangle(10, 10, 5));
+
+console.groupEnd();
+
+
