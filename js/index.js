@@ -83,4 +83,74 @@ console.log(triangle(10, 10, 5));
 
 console.groupEnd();
 
+console.group("Task 4");
 
+console.group("Task area of triagle");
+
+/**
+ * Function calculates the area of a triangle
+ * @param {Number} a side
+ * @param {Number} b side
+ * @returns {Number} area of triagle
+ */
+const areaOfTriagle = function (a, b) {
+  return 0.5 * a * b;
+};
+
+console.log(`S = ${areaOfTriagle(5, 9)}`);
+
+console.groupEnd();
+
+console.group("Task area of a rectangle");
+
+/**
+ * Function calculates the area of rectangle
+ * @param {Number} a length
+ * @param {Number} b width
+ * @returns {Number} area of rectangle
+ */
+
+const areaOfRectangle = function (a, b) {
+  return a * b;
+};
+
+console.log(`S = ${areaOfRectangle(7, 5)}`);
+
+console.groupEnd();
+
+console.group("Task surface area of a cone in terms of radius");
+
+/**
+ * Function calculates the area of a cone in terms of radius
+ * @param {Number} r radius length
+ * @param {Number} l generatrix length
+ * @returns {Number} area of a cone
+ */
+
+const areaOfCone = function (r, l) {
+  return Math.PI * r * (r + l);
+};
+
+console.log(`S = ${areaOfCone(10, 8)}`);
+
+console.groupEnd();
+
+console.group("Task surface area of the parallelepiped");
+
+/**
+ * Function calculates surface area of the parallelepiped
+ * @param {Number} a fin length
+ * @param {Number} b fin length
+ * @param {Number} c fin length
+ * @returns {Number} area of the parallelepiped
+ */
+
+const areaOfParallelepiped = function (a, b, c) {
+  return 2 * (a * b + a * c + b * c);
+};
+
+console.log(`S = ${areaOfParallelepiped(6, 3, 10)}`);
+
+console.groupEnd();
+
+console.groupEnd();
