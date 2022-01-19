@@ -31,7 +31,7 @@ console.log(primeNumber(n));
  */
 
 function primeNumber(n) {
-  for (let i = 2; i < n; i++) {
+  for (let i = 2; i < n / 2; i++) {
     if (n % i === 0) return false;
   }
   return n > 1;
@@ -49,10 +49,7 @@ console.group("Task 2");
  */
 
 function checkMultiplicity(n1, n2) {
-  if (Number.isInteger(n1 / n2)) {
-    return true;
-  }
-  return false;
+  return Number.isInteger(n1 / n2);
 }
 
 console.log(checkMultiplicity(25, 5));
@@ -77,7 +74,7 @@ function triangle(a, b, c) {
     return false;
   }
   return true;
-}
+};
 
 console.log(triangle(10, 10, 5));
 
